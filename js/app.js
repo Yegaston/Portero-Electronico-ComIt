@@ -12,6 +12,7 @@ borrarBtn.addEventListener('click', () => {
     pisoInput.value = ''
     deptoInput.value = ''
     clicks = 0
+    llamadoCas.innerHTML = ''
 })
 // Lo mismo pero en funcion que arriba pero en funcion
 function borrarDatos() {
@@ -30,6 +31,7 @@ llamarBtn.addEventListener("click", () => {
     const llamadoCas = document.getElementById('llamadoCas')
     if(parseInt(pisoInput.value) < 43 && parseInt(deptoInput.value) < 9){
         llamadoCas.innerHTML = `Llamando al piso n° ${pisoInput.value}, depto n° ${deptoInput.value}`
+        borrarDatos();
     } else {
         llamadoCas.innerHTML = `Piso o depto incorrecto, vuelva a ingresar`
         borrarDatos();

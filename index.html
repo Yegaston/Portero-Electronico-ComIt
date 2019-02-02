@@ -8,19 +8,27 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 </head>
-<body>
+<body class="animated rollIn">
  
     <header>
-        <h1>Portero Electrico.</h1>
+        <h1 class="animated bounce">Portero Electrico.</h1>
         <p>:D</p>
     </header>
 
     <div class="botonera mt-15">
         <div class="pisoDepto">
             <div class="row-2">
-                <input id="piso" class="mr-15" type="text" placeholder="PISO">
-                <input id="depto" class="ml-15" type="" placeholder="DEPTO">
+                <input id="piso" class="mr-15 inputPD" type="text" placeholder="PISO">
+                <input id="depto" class="ml-15 inputPD" type="" placeholder="DEPTO">
             </div>  
         </div>
 
@@ -42,16 +50,17 @@
                 <input type="button" id="n9" class="btn btn-numero" value="9"></input>
             </div>
             <div class="row-3">
+                <button  id="llamar" class="btn" value="Llamar"><i class="material-icons">call</i></button>
                 <input type="button" id="n0" class="btn btn-numero" value="0"></input>
-                <input  id="llamar" class="btn" value="Llamar" type="button"></input>
                 <input id="borrar" class="btn" type="submit" value="Borrar"></input>
+                
             </div>
 
         </div>
     </div>
 
     <div class="row-2">
-        <h1 id="llamadoCas"></h1>
+        <h1 id="llamadoCas" class="animated infinite heartBeat delay-5s"></h1>
     </div>
 
 
